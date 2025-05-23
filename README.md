@@ -6,7 +6,7 @@ A simple attendance system built with:
 - **Backend:** Java 17 + Spring Boot
 - **Authentication:** JWT via JJWT and Spring Security
 
-## ## Backend Setup & Run
+## Backend Setup & Run
 
 1. Navigate into the Spring Boot project:  
    cd server/attendance-server
@@ -14,7 +14,7 @@ A simple attendance system built with:
    ./mvnw spring-boot:run
 3. The backend will start on http://localhost:8080.
    
-## ## Frontend Setup & Run
+## Frontend Setup & Run
 1. Open a new terminal, navigate to the client folder:
    cd client
 2. Install (if you don’t have a static server):
@@ -23,9 +23,9 @@ A simple attendance system built with:
    Login page: http://localhost:3000/login.html
    Home page: http://localhost:3000/home.html
 
-## ## Login credentials
-username: test1
-password: password123
+## Login credentials
+- username: test1
+- password: password123
    
 
 
