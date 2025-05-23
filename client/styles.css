@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #e0aaff 10%, #c39ff5 40%, #9d67ee 75%);
+  overflow: hidden;
 }
 
 body::before,
@@ -42,7 +44,7 @@ body::after {
 .login-card {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.7); /* more transparent */
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   padding: 2rem;
   border-radius: 16px;
@@ -109,4 +111,85 @@ body::after {
   color: #c0392b;
   font-size: 0.9rem;
   min-height: 1.2em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn.primary {
+  background: #732d91;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(142, 68, 173, 0.4);
+}
+.btn.primary:hover {
+  background: #8e44ad;
+  transform: translateY(-1px);
+}
+
+.btn.logout {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn.logout:hover {
+  background: #c0392b;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 700px;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: purple;
+}
+
+.hero-content .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .description {
+    font-size: 1rem;
+  }
+  .top-nav {
+    padding: 0.5rem 1rem;
+  }
 }
